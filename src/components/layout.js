@@ -24,6 +24,10 @@ const Container = styled.div`
   max-width: ${rhythm(24)};
   padding: ${rhythm(1.5)} ${rhythm(3 / 4)};
 `
+const Nav = styled.nav`
+  text-align: right;
+  margin-bottom: ${rhythm(1)};
+`
 
 const Layout = ({ location, title, children }) => {
   const data = useStaticQuery(graphql`
@@ -42,19 +46,29 @@ const Layout = ({ location, title, children }) => {
 
   if (location.pathname === rootPath) {
     header = (
-      <H1>
-        <StyledLink to={'/'}>
-          {title}
-        </StyledLink>
-      </H1>
+      <>
+        <H1>
+          <StyledLink to={'/'}>
+            {title}
+          </StyledLink>
+        </H1>
+        <Nav>
+          <StyledLink to="/about/">About</StyledLink>
+        </Nav>
+      </>
     )
   } else {
     header = (
-      <H3>
-        <StyledLink to={'/'} >
-          {title}
-        </StyledLink>
-      </H3>
+      <>
+        <H3>
+          <StyledLink to={'/'} >
+            {title}
+          </StyledLink>
+        </H3>
+        <Nav>
+          <StyledLink to="/about/">About</StyledLink>
+        </Nav>
+      </>
     )
   }
   return (
