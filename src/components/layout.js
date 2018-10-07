@@ -1,7 +1,29 @@
 import React from "react"
 import { Link, useStaticQuery, graphql } from "gatsby"
+import styled from 'styled-components'
 
 import { rhythm, scale } from "../utils/typography"
+
+const H1 = styled.h1`
+  ${{...scale(1.5)}};
+  margin-bottom: ${rhythm(1.5)};
+  margin-top: 0;
+`
+const H3 = styled.h3`
+  font-family: Montserrat, sans-serif;
+  margin-top: 0;
+`
+const StyledLink = styled(Link)`
+  box-shadow: none;
+  text-decoration: none;
+  color: inherit;
+`
+const Container = styled.div`
+  margin-left: auto;
+  margin-right: auto;
+  max-width: ${rhythm(24)};
+  padding: ${rhythm(1.5)} ${rhythm(3 / 4)};
+`
 
 const Layout = ({ location, title, children }) => {
   const data = useStaticQuery(graphql`
@@ -20,55 +42,23 @@ const Layout = ({ location, title, children }) => {
 
   if (location.pathname === rootPath) {
     header = (
-      <h1
-        style={{
-          ...scale(1.5),
-          marginBottom: rhythm(1.5),
-          marginTop: 0,
-        }}
-      >
-        <Link
-          style={{
-            boxShadow: `none`,
-            textDecoration: `none`,
-            color: `inherit`,
-          }}
-          to={`/`}
-        >
+      <H1>
+        <StyledLink to={'/'}>
           {title}
-        </Link>
-      </h1>
+        </StyledLink>
+      </H1>
     )
   } else {
     header = (
-      <h3
-        style={{
-          fontFamily: `Montserrat, sans-serif`,
-          marginTop: 0,
-        }}
-      >
-        <Link
-          style={{
-            boxShadow: `none`,
-            textDecoration: `none`,
-            color: `inherit`,
-          }}
-          to={`/`}
-        >
+      <H3>
+        <StyledLink to={'/'} >
           {title}
-        </Link>
-      </h3>
+        </StyledLink>
+      </H3>
     )
   }
   return (
-    <div
-      style={{
-        marginLeft: `auto`,
-        marginRight: `auto`,
-        maxWidth: rhythm(24),
-        padding: `${rhythm(1.5)} ${rhythm(3 / 4)}`,
-      }}
-    >
+    <Container>
       <header>{header}</header>
       <main>{children}</main>
       <footer>
@@ -78,7 +68,7 @@ const Layout = ({ location, title, children }) => {
           Antonio
         </a>
       </footer>
-    </div>
+    </Container>
   )
 }
 
