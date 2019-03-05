@@ -27,6 +27,11 @@ const Container = styled.div`
 const Nav = styled.nav`
   text-align: right;
   margin-bottom: ${rhythm(1)};
+  > * {
+    :not(:first-child) {
+      margin-left: 1rem;
+    }
+  }
 `
 
 const Layout = ({ location, title, children }) => {
@@ -54,6 +59,7 @@ const Layout = ({ location, title, children }) => {
         </H1>
         <Nav>
           <StyledLink to="/about/">About</StyledLink>
+          <StyledLink to="/blog/">Blog</StyledLink>
         </Nav>
       </>
     )
@@ -67,6 +73,7 @@ const Layout = ({ location, title, children }) => {
         </H3>
         <Nav>
           <StyledLink to="/about/">About</StyledLink>
+          <StyledLink to="/blog/">Blog</StyledLink>
         </Nav>
       </>
     )

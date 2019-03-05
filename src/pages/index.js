@@ -2,7 +2,6 @@ import React from 'react'
 import { Link, graphql } from 'gatsby'
 import styled from 'styled-components'
 
-import Bio from "../components/bio"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import { rhythm } from "../utils/typography"
@@ -11,7 +10,7 @@ const Title = styled.h3`
   margin-bottom: ${rhythm(1 / 4)};
 `
 const StyledLink = styled(Link)`
-  box-shadow: 'none';
+  box-shadow: none;
 `
 
 const BlogIndex = ({ data, location }) => {
@@ -21,7 +20,6 @@ const BlogIndex = ({ data, location }) => {
   return (
     <Layout location={location} title={siteTitle}>
       <SEO title="All posts" />
-      <Bio />
       {posts.map(({ node }) => {
         const title = node.frontmatter.title || node.fields.slug
         return (
@@ -57,7 +55,10 @@ export const pageQuery = graphql`
         title
       }
     }
-    allMarkdownRemark(sort: { fields: [frontmatter___date], order: DESC }) {
+    allMarkdownRemark(
+      limit: 1
+      sort: { fields: [frontmatter___date], order: DESC}
+    ) {
       edges {
         node {
           excerpt
