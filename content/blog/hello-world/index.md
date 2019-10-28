@@ -1,47 +1,21 @@
 ---
 title: Hello World
-date: "2019-11-05"
+date: "2019-11-07"
 description: "Wherein we introduce the blog to the world"
 ---
 
-This is a placeholder for a first actual post on this new blog!
 
-Here I'm introducing this blog to the world and promising to write many
-more interesting things in the future.
+Here's a picture of a Devil Face
+[from a TOA campaign blog](https://geekrampage.blogspot.com/2018/10/the-devil-face-tomb-of-annihilation.html)
+to use as temporary decoration.
 
-This blog+site is built using Gatsby.
-The Gatsby tooling and ecosystem is great so I'm using Gatsby's starter blog
-template as a starting point for this one.
+![Devil Face](./Devil_Face.jpg)
 
-One big reason for using this technology is the ease with which different
-colleagues can collaborate on a community-driven site. An example of this is
-the blogging system.
 
-This post is composed using markdown, a friendly format that empowers even the
-least tech-savvy writer to, among other possibilities, include pictures, links
-to other pages, and tables, and to distinguish section headers, image captions,
-quotations, and code snippets from regular text --- all possible within a bare
-bones text editor through the use of sensible conventions around punctuation
-and spacing.
+This blog+site is built using Gatsby, my favorite tool/framework of the past
+couple of years.
 
-In addition to using markdown blog posts have a section called 'front matter'
-at the top of each file, where a blog post title and date can be specified or
-even a description of the blog post that can be used as a preview when linking
-to the blog post from other pages, or used for SEO and Open Graph purposes.
-If no description is added, the system will excerpt a section from the blog
-post.
+You can find [the code for this blog+site](https://www.github.com/Strangehill/19-D-and-D/).
 
-The
-[source file for this post](https://raw.githubusercontent.com/Strangehill/gatsby-starter-blog/master/content/blog/hello-world/index.md)
-, the
-[Gatsby Documentation for Markdown Syntax](https://www.gatsbyjs.org/docs/mdx/markdown-syntax/)
-and this
-[overview and description of Markdown syntax](https://daringfireball.net/projects/markdown/syntax)
-from markdown developer John Gruber, are good places to learn more about
-markdown.
-
-You can also reference the whole kitchen sink of markdown syntax with examples available at this
-[Markdown guide](https://www.markdownguide.org/basic-syntax).
-
-![A random elevator's ceiling](./random-elevator-ceiling.jpg)
+You'll find [this very page there at](https://www.github.com/Strangehill/19-D-and-D/master/content/blog/hello-world/index.md)
 

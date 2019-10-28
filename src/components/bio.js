@@ -20,7 +20,7 @@ const Wrapper = styled.div`
 const Bio = () => {
   const data = useStaticQuery(graphql`
     query BioQuery {
-      avatar: file(absolutePath: { regex: "/noun_profile.png/" }) {
+      avatar: file(absolutePath: { regex: "/noun_Devil_Face_profile.png/" }) {
         childImageSharp {
           fixed(width: 50, height: 50) {
             ...GatsbyImageSharpFixed
@@ -29,7 +29,7 @@ const Bio = () => {
       }
       site {
         siteMetadata {
-          producer
+          compiler
           social {
             twitter
           }
@@ -38,12 +38,12 @@ const Bio = () => {
     }
   `)
 
-  const { producer, social } = data.site.siteMetadata
+  const { compiler, social } = data.site.siteMetadata
   return (
     <Wrapper>
       <Image
         fixed={data.avatar.childImageSharp.fixed}
-        alt={producer}
+        alt={compiler}
         style={{
           marginRight: rhythm(1 / 2),
           marginBottom: 0,
@@ -55,12 +55,13 @@ const Bio = () => {
         }}
       />
       <p>
-        This Website+Blog template is managed by <strong>{producer}</strong>
+        The tooling that holds this assorted trove of clues and curiousities
+        was assembled by <strong>{compiler}</strong>,
         {` `}
-        who lives and works in Taiwan, building useful things.
+        who was last known to be surveying the northern backwaters.
         {` `}
         <a href={`https://twitter.com/${social.twitter}`}>
-          You should follow him on Twitter.
+          You could follow him on Twitter.
         </a>
       </p>
     </Wrapper>

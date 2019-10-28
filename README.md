@@ -5,8 +5,48 @@
   </a>
 </p>
 <h1 align="center">
-  Gatsby's blog starter
+  The Code Behind the Site
 </h1>
+
+This blog+site is built using Gatsby, my favorite tool/framework of the past
+couple of years.
+
+The Gatsby tooling and ecosystem is great so, I'm using
+[my own tweaked version of one of Gatsby's starter templates](https://wwww.github.com/Strangehill/gatsby-starter-blog/)
+as a starting point for this site.
+
+One big reason for using this technology is the relative ease with which
+different stakeholders can collaborate on a community-driven site.
+An example of this is the blogging system.
+
+This post is composed using markdown, a friendly format and set of writing
+conventions that empowers even the least tech-savvy writer to, among other
+possibilities, include pictures, links to other pages, and tables, and to
+distinguish section headers, image captions, quotations, and code snippets
+from regular text --- all possible within any bare bones text editor through
+the use of sensible conventions around punctuation and spacing.
+
+In addition to using markdown, blog posts have a section called 'front matter'
+at the top of each file, where one can specify a blog post title or date,
+authors' names, or even a description of the blog post that can be used as a
+preview on search results, social media, or when we want to add a little extra
+information when we link to the blog post from other pages.
+
+The
+[source file for this post](https://raw.githubusercontent.com/Strangehill/19-D-and-D/master/content/blog/hello-world/index.md)
+, the
+[Gatsby Documentation for Markdown Syntax](https://www.gatsbyjs.org/docs/mdx/markdown-syntax/)
+and this
+[overview and description of Markdown syntax](https://daringfireball.net/projects/markdown/syntax)
+from markdown developer John Gruber, are good places to learn more about
+markdown.
+
+You can also reference the whole kitchen sink of markdown syntax with examples available at this
+[Markdown guide](https://www.markdownguide.org/basic-syntax).
+
+<h2 align="center">
+  Gatsby's blog starter
+</h2>
 
 Kick off your project with this blog boilerplate. This starter ships with the main Gatsby configuration files you might need to get up and running blazing fast with the blazing fast app generator for React.
 

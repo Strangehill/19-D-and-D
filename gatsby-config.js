@@ -1,9 +1,9 @@
 module.exports = {
   siteMetadata: {
-    title: `a site+blog starter`,
-    producer: `Strangehill`,
-    description: `A customized variation of the official Gatsby starter blog.`,
-    siteUrl: `https://gatsby-starter-blog-demo.netlify.com/`,
+    title: `D and D, Tomb of Annihilation, 2019`,
+    compiler: `the cartographer`,
+    description: `books, maps, and scrolls`,
+    siteUrl: `https://toa.multifarious.net/`,
     social: {
       twitter: `strangehill`,
     },
@@ -58,13 +58,13 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `a tweaked fork of the gatsby starter blog`,
-        short_name: `a gatsby site+blog template`,
+        name: `D and D, Tomb of Annihilation, 2019`,
+        short_name: `D and D 2019`,
         start_url: `/`,
-        background_color: `#ffffff`,
-        theme_color: `#AA3377`,
+        background_color: `#dddddd`,
+        theme_color: `#936`,
         display: `minimal-ui`,
-        icon: `content/assets/noun_big_planet.svg`,
+        icon: `content/assets/noun_Devil_Face_favicon.svg`,
       },
     },
     `gatsby-plugin-react-helmet`,

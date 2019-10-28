@@ -18,7 +18,7 @@ function SEO({ description, lang, meta, title }) {
           siteMetadata {
             title
             description
-            producer
+            compiler
           }
         }
       }
@@ -57,7 +57,7 @@ function SEO({ description, lang, meta, title }) {
         },
         {
           name: `twitter:creator`,
-          content: site.siteMetadata.producer,
+          content: site.siteMetadata.compiler,
         },
         {
           name: `twitter:title`,

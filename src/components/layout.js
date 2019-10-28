@@ -72,13 +72,16 @@ const Layout = ({ location, title, children }) => {
       {header}
       <main>{children}</main>
       <footer>
-        © {new Date().getFullYear()}, Built with care and attention, by
+        <a href="https://www.github.com/strangehill/19-D-and-D/">Built</a>
+        {` `}
+        for game night, by
         {` `}
         <a href={`https://twitter.com/${data.site.siteMetadata.social.twitter}`}>
           Antonio
         </a>
+        .
       </footer>
-    </Container>
+  </Container>
   )
 }
 
