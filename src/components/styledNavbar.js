@@ -9,6 +9,8 @@ const Navbar = ({ className }) => {
     <nav className={className}>
       <StyledLink to="/about/">About</StyledLink>
       <StyledLink to="/blog/">Blog</StyledLink>
+        {` `}
+      <StyledLink to="/maps/">Maps</StyledLink>
     </nav>
   )
 }
