@@ -10,6 +10,8 @@ const Navbar = ({ className }) => {
       <StyledLink to="/about/">About</StyledLink>
       <StyledLink to="/blog/">Blog</StyledLink>
         {` `}
+      <StyledLink to="/characters/">Characters</StyledLink>
+        {` `}
       <StyledLink to="/maps/">Maps</StyledLink>
     </nav>
   )
