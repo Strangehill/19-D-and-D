@@ -19,8 +19,15 @@ const H3 = styled.h3`
 const Container = styled.div`
   margin-left: auto;
   margin-right: auto;
-  max-width: ${rhythm(24)};
+  max-width: ${rhythm(44)};
   padding: ${rhythm(1.5)} ${rhythm(3 / 4)};
+`
+const Header = styled.header`
+  @media (min-width: 600px) {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+  }
 `
 const Layout = ({ location, title, children }) => {
   const data = useStaticQuery(graphql`
@@ -39,30 +46,30 @@ const Layout = ({ location, title, children }) => {
 
   if (location.pathname === rootPath) {
     header = (
-      <>
+      <header>
         <H1>
           <StyledLink to={'/'}>
             {title}
           </StyledLink>
         </H1>
         <StyledNavbar />
-      </>
+      </header>
     )
   } else {
     header = (
-      <>
+      <Header>
         <H3>
           <StyledLink to={'/'} >
             {title}
           </StyledLink>
         </H3>
         <StyledNavbar />
-      </>
+      </Header>
     )
   }
   return (
     <Container>
-      <header>{header}</header>
+      {header}
       <main>{children}</main>
       <footer>
         © {new Date().getFullYear()}, Built with care and attention, by
